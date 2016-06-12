@@ -1,0 +1,30 @@
+Compartir carpeta en mv
+	apt-get install dkms
+	apt-get install build-essential
+	sudo reboot
+
+ 	sudo mount /dev/cdrom /media/cdrom
+ 	sudo /media/cdrom/VBoxLinuxAdditions.run
+
+ 	groups
+ 	echo $UID
+ 	etc/group
+
+ 	sudo mount -t vboxsf -o uid=1000,gid=1000 shared compartido/
+
+
+rails new project_facilitico
+generar controlador
+	rails g controller Main home
+
+modificar config/routes.rb
+	get 'main/home'
+	root 'main#home'
+
+devise
+	agregar gema:
+	gem 'devise', github: "plataformatec/devise"
+	rails generate devise:install
+	 
+rake db:migrate    o 		rails db:migrate
+rails db.rollback
