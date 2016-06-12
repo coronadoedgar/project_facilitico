@@ -28,3 +28,6 @@ devise
 	 
 rake db:migrate    o 		rails db:migrate
 rails db.rollback
+
+autenticación con facebook
+	gem 'omniauth-facebook'
